@@ -6,3 +6,5 @@ script:
 - pwd
 - cd
 - pwd
+- echo $HOME
+
