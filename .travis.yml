@@ -3,3 +3,6 @@ language: cpp
 env:
 
 script:
+	- pwd
+	- cd
+	- pwd
