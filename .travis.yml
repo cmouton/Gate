@@ -11,7 +11,7 @@ before_install:
 - export SCRIPT_DIRECTORY=$cwd/travis
 
 - ls
-- travis_wait /bin/bash $SCRIPT_DIRECTORY/geant4_build.sh 10.03.p03 > $SCRIPT_DIRECTORY/geant4_install_log.txt 2>&1
+- travis_wait 45 /bin/bash $SCRIPT_DIRECTORY/geant4_build.sh 10.03.p03 > $SCRIPT_DIRECTORY/geant4_install_log.txt 2>&1
 - ls
 - less $SCRIPT_DIRECTORY/geant4_install_log.txt
 
