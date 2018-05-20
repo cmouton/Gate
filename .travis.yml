@@ -7,19 +7,19 @@ env:
 
 before_install:
 - export cwd=$(pwd)
-- export SCRIPTS=$cwd/travis
+- export SCRIPT_DIRECTORY=$cwd/travis
 
 install :
-#- $SCRIPTS/geant4_build.sh
+#- $SCRIPT_DIRECTORY/geant4_build.sh
 
 script:
-- /bin/bash $SCRIPTS/geant4_build.sh 10.03.p03
+- /bin/bash $SCRIPT_DIRECTORY/geant4_build.sh 10.03.p03
 - cd $HOME
 - cd geant4.10.03.p03
 - tar -xvf geant4.10.03.p03.tar.gz
 - ls
 
-#/usr/bin/ctest -S $SCRIPTS/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-creatis-develop.cmake -VV --output-on-failure
+#/usr/bin/ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-creatis-develop.cmake -VV --output-on-failure
 
 
 - echo $cwd
