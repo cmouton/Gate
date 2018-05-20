@@ -5,6 +5,14 @@ env:
 script:
 - pwd
 - ls
+- cd ..
+- ls
+- cd ..
+- ls
+- cd ..
+- ls
+- cd ..
+- ls
 - cd
 - pwd
 - ls
