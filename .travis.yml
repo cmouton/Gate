@@ -6,7 +6,7 @@ language: cpp
 env:
 
 install :
-- travis/geant4_build.sh
+#- travis/geant4_build.sh
 
 script:
 - git log
