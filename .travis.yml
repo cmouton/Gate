@@ -10,9 +10,12 @@ before_install:
 - export SCRIPTS=$cwd/travis
 
 install :
+- ls
+- pwd
 #- $SCRIPTS/geant4_build.sh
 
 script:
+#- /bin/bash $SCRIPTS/geant4_build.sh 10.03.p03
 - echo $cwd
 - echo $SCRIPTS
 - git log
