@@ -25,7 +25,6 @@ script:
 #/usr/bin/ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-creatis-develop.cmake -VV --output-on-failure
 
 
-
 - echo $cwd
 - echo $SCRIPTS
 - git log
