@@ -24,7 +24,7 @@ cmake -DCMAKE_INSTALL_PREFIX:PATH=$HOME/geant4.$1/geant4.$1-install/ \
       > $HOME/geant4.$1/geant4_install_log.txt
 # Trick added to be compatible with the free version of Travis
 ls
-make -j8
+make -j2
 # Trick added to be compatible with the free version of Travis
 >> $HOME/geant4.$1/geant4_install_log.txt
 
