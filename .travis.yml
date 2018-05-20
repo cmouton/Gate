@@ -9,8 +9,9 @@ before_install:
 - export cwd=$(pwd)
 - export SCRIPT_DIRECTORY=$cwd/travis
 
-install :
 - /bin/bash $SCRIPT_DIRECTORY/geant4_build.sh 10.03.p03
+
+install :
 
 script:
 - cd $HOME
