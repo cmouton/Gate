@@ -28,6 +28,9 @@ make -j8
 # Trick added to be compatible with the free version of Travis
 >> $HOME/geant4.$1/geant4_install_log.txt
 
+# Trick added to be compatible with the free version of Travis
+ls
+
 # Install.
 make install \
 # Trick added to be compatible with the free version of Travis
