@@ -7,14 +7,14 @@ env:
 
 before_install:
 - export cwd=$(pwd)
-- echo $cwd
 - export SCRIPTS=$cwd/travis
-- echo $SCRIPTS
 
 install :
 #- $SCRIPTS/geant4_build.sh
 
 script:
+- echo $cwd
+- echo $SCRIPTS
 - git log
 - pwd
 - ls
