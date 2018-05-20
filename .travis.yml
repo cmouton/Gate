@@ -9,6 +9,6 @@ script:
 - pwd
 - ls
 - echo $HOME
-- which /usr/bin/ctest
+- which ctest
 - which make
  
