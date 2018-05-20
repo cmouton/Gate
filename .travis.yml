@@ -5,8 +5,14 @@ language: cpp
 
 env:
 
+before_install:
+- export cwd=$(pwd)
+- echo $cwd
+- export SCRIPTS=$cwd/travis
+- echo $SCRIPTS
+
 install :
-#- travis/geant4_build.sh
+- $SCRIPTS/geant4_build.sh
 
 script:
 - git log
