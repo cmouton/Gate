@@ -12,7 +12,7 @@ before_install:
 - echo $SCRIPTS
 
 install :
-- $SCRIPTS/geant4_build.sh
+#- $SCRIPTS/geant4_build.sh
 
 script:
 - git log
