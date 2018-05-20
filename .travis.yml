@@ -3,6 +3,10 @@ language: cpp
 env:
 
 script:
+- git log
+- git branch -a
+- git status
+- git checkout develop
 - pwd
 - ls
 - cd ..
