@@ -18,10 +18,10 @@ before_install:
 
 install:
 
-cache:
+#cache:
 #- timeout: 10000
-- directories:
-  - $HOME/geant4.10.03.p03
+#- directories:
+#  - $HOME/geant4.10.03.p03
 
 script:
 - cd $HOME
