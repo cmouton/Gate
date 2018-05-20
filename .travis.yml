@@ -1,7 +1,8 @@
+language: cpp
+
 git:
   depth: 1
 
-language: cpp
 
 env:
 
@@ -14,7 +15,12 @@ before_install:
 - ls
 - less $SCRIPT_DIRECTORY/geant4_install_log.txt
 
-install :
+install:
+
+cache:
+#- timeout: 10000
+- directories:
+  - $HOME/geant4.10.03.p03
 
 script:
 - cd $HOME
