@@ -20,7 +20,7 @@ tar xvzf geant4.$1.tar.gz
 cd geant4.$1-build/
 cmake -DCMAKE_INSTALL_PREFIX:PATH=$HOME/geant4.$1/geant4.$1-install/ \
       -DGEANT4_INSTALL_DATA:BOOL=ON ../geant4.$1 \
-# Trick added to be compatible with the free version of Travis
+# Trick added to be compatible with the free version of Travis (<10 min without output, max output size 4MB, <30 min)
       > $HOME/geant4.$1/geant4_install_log.txt
 # Trick added to be compatible with the free version of Travis
 ls
