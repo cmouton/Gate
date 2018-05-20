@@ -1,8 +1,15 @@
+git :
+  depth : 1
+
 language: cpp
 
 env:
 
+install :
+- travis/geant4_build.sh
+
 script:
+- git log
 - pwd
 - ls
 - cd
@@ -12,4 +19,4 @@ script:
 - which ctest
 - which make
 
-- travis/geant4_build.sh 
+- echo $SCRIPTS
