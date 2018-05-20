@@ -12,7 +12,8 @@ mkdir geant4.$1-build
 mkdir geant4.$1-install
 
 # Retrieve the source.
-wget http://geant4.web.cern.ch/geant4/support/source/geant4.$1.tar.gz
+#wget http://geant4.web.cern.ch/geant4/support/source/geant4.$1.tar.gz
+wget http://cern.ch/geant4-data/releases/geant4.10.03.p03.tar.gz
 tar xvzf geant4.$1.tar.gz
 
 # Build.
