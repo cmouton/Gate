@@ -10,10 +10,9 @@ before_install:
 - export SCRIPT_DIRECTORY=$cwd/travis
 
 install :
-#- $SCRIPT_DIRECTORY/geant4_build.sh
+- /bin/bash $SCRIPT_DIRECTORY/geant4_build.sh 10.03.p03
 
 script:
-- /bin/bash $SCRIPT_DIRECTORY/geant4_build.sh 10.03.p03
 - cd $HOME
 - cd geant4.10.03.p03
 - tar -xvf geant4.10.03.p03.tar.gz
