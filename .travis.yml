@@ -1,5 +1,5 @@
-git :
-  depth : 1
+git:
+  depth: 1
 
 language: cpp
 
@@ -26,3 +26,6 @@ script:
 - which make
 
 - echo $SCRIPTS
+- which bash
+- ls /bin/bash
+
