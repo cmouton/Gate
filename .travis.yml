@@ -4,7 +4,11 @@ env:
 
 script:
 - pwd
+- ls
 - cd
 - pwd
+- ls
 - echo $HOME
-
+- which /usr/bin/ctest
+- which make
+ 
