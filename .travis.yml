@@ -3,23 +3,7 @@ language: cpp
 env:
 
 script:
-- git log
-- git branch -a
-- git status
-- git checkout develop
 - pwd
-- ls
-- cd ..
-- ls
-- cd ..
-- ls
-- cd ..
-- ls
-- cd ..
-- ls
-- cd ..
-- ls
-- cd ..
 - ls
 - cd
 - pwd
@@ -27,4 +11,5 @@ script:
 - echo $HOME
 - which ctest
 - which make
- 
+
+- travis/geant4_build.sh 
