@@ -15,7 +15,9 @@ install :
 script:
 - /bin/bash $SCRIPTS/geant4_build.sh 10.03.p03
 - cd $HOME
-- ls geant4.10.03.p03
+- cd geant4.10.03.p03
+- tar -xvzf geant4.10.03.p03.tar.gz
+- ls
 
 #/usr/bin/ctest -S $SCRIPTS/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-creatis-develop.cmake -VV --output-on-failure
 
