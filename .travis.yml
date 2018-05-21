@@ -26,7 +26,7 @@ before_install:
 
 
 # Uncomment this line the first time to build and install ecat7 ; then it will be cached
-- /bin/bash $SCRIPT_DIRECTORY/ecat7/ecat7.sh
+#- /bin/bash $SCRIPT_DIRECTORY/ecat7/ecat7.sh
 - export ECAT7_DIRECTORY=$SCRIPT_DIRECTORY/ecat7
 
 install:
