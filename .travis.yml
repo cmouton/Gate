@@ -39,7 +39,7 @@ cache:
   - $HOME/root
 
 script:
-
+- which git
 - echo $DASHBOARD_ROOT
 - echo $SCRIPT_DIRECTORY
 - echo $ROOT_DIRECTORY
