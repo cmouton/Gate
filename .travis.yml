@@ -21,7 +21,7 @@ before_install:
 #- travis_wait 45 
 - travis_wait 45 /bin/bash $SCRIPT_DIRECTORY/geant4_build.sh 10.03.p03
 # > $SCRIPT_DIRECTORY/geant4_install_log.txt 2>&1
-- ls $HOME/geant4.10.03.p03
+- ls $HOME/geant4.10.03.p03/*
 #- less $SCRIPT_DIRECTORY/geant4_install_log.txt
 
 install:
@@ -32,24 +32,12 @@ cache:
   - $HOME/geant4.10.03.p03
 
 script:
-- cd $HOME
-- cd geant4.10.03.p03
-- tar -xvf geant4.10.03.p03.tar.gz
-- ls
 
 #/usr/bin/ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-creatis-develop.cmake -VV --output-on-failure
 
 
 - echo $cwd
-- echo $SCRIPTS
-- pwd
-- ls
-- cd
-- pwd
+- echo $SCRIPT_DIRECTORY
 - ls
 - echo $HOME
-- which ctest
-- which make
-
-- echo $SCRIPTS
 
