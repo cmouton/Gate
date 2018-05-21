@@ -17,47 +17,19 @@ before_install:
 - export DASHBOARD_ROOT=$(pwd)
 - export SCRIPT_DIRECTORY=$DASHBOARD_ROOT/travis
 
-# Uncomment the first time to build and install geant4 ; then it will be cached
+# Uncomment this line the first time to build and install geant4 ; then it will be cached
 #- travis_wait 45 /bin/bash $SCRIPT_DIRECTORY/geant4_build.sh 10.03.p03
 - ls $HOME/geant4.10.03.p03/*
 - source $HOME/geant4.10.03.p03/geant4.10.03.p03-install/bin/geant4.sh
 
-# Uncomment the following lines the first time to build and install root ; then it will be cached
+# Uncomment this line the first time to build and install root ; then it will be cached
 #- /bin/bash $SCRIPT_DIRECTORY/root.sh
 - export ROOT_DIRECTORY=$HOME/root/root_v6.10.06
 - source /home/travis/root/root_v6.10.06/bin/thisroot.sh
 
 
-- apt-cache search socket
-- ls /
-- ls /usr/
-- ls /usr/lib*
-- ls /var/
-- ls /var/lib*
-- ls /lib64/
-- ls /lib64/*
-- find /usr/lib -name libsocket* -type f
-- find /var/lib -name libsocket* -type f
-
-
-# Uncomment these lines the first time to build and install ecat7 ; then it will be cached
-#- /bin/bash $SCRIPT_DIRECTORY/ecat7/ecat7.sh
-- rm -rf $HOME/ecat7
-- mkdir $HOME/ecat7
-- cd $HOME/ecat7
-- wget www.opengatecollaboration.org/sites/default/files/ecat.tar.gz
-- tar -xvzf ecat.tar.gz
-- export ECAT7_DIRECTORY=$HOME/ecat7
-- cp Makefile.unix Makefile
-- make
-- cd utils
-- cp Makefile.unix Makefile
-- make
-- cd ..
-- mkdir include
-- cp *.h include/
-- mkdir lib
-- cp libecat.a lib/
+# Uncomment this line the first time to build and install ecat7 ; then it will be cached
+- /bin/bash $SCRIPT_DIRECTORY/ecat7/ecat7.sh
 
 
 

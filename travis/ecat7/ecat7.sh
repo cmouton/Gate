@@ -9,7 +9,9 @@ export ECAT7_DIRECTORY=$HOME/ecat7
 cp Makefile.unix Makefile
 make
 cd utils
-cp Makefile.unix Makefile
+# Apply the Makefile patch
+cp $SCRIPT_DIRECTORY/ecat7/Makefile .
+grep socket Makefile
 make
 cd ..
 mkdir include
