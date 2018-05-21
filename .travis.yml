@@ -46,7 +46,5 @@ script:
 - echo $DASHBOARD_ROOT
 - echo $SCRIPT_DIRECTORY
 - echo $ROOT_DIRECTORY
-- cd $ROOT_DIRECTORY
-- ls *
 - echo $HOME
 
