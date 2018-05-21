@@ -31,7 +31,7 @@ before_install:
 - export ROOT_DIRECTORY=/home/travis/root/root_v6.10.06
 - echo $ROOT_DIRECTORY
 - cd $ROOT_DIRECTORY
-- ls
+- ls *
 
 install:
 
