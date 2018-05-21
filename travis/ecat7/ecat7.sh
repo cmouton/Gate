@@ -11,7 +11,6 @@ make
 cd utils
 # Apply the Makefile patch
 cp $SCRIPT_DIRECTORY/ecat7/Makefile .
-grep socket Makefile
 make
 cd ..
 mkdir include
