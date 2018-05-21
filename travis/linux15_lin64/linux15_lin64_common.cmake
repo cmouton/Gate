@@ -11,7 +11,7 @@ set(CTEST_TEST_ARGS PARALLEL_LEVEL 8)
 
 # Specific common options
 set(CTEST_CONFIGURE_COMMAND_COMMON_OPTIONS "\"-DROOTCINT_EXECUTABLE:STRING=$ENV{ROOT_DIRECTORY}/bin/rootcint\"
-                                            \"-DROOT_CONFIG_EXECUTABLE:STRING=$ENV{SCRIPT_DIRECTORY}/bin/root-config\""
+                                            \"-DROOT_CONFIG_EXECUTABLE:STRING=$ENV{ROOT_DIRECTORY}/bin/root-config\""
   )
 
 if (NOT CTEST_SPECIFIC_OPTION STREQUAL "_ITKOFF")
