@@ -42,7 +42,6 @@ script:
 
 - echo $cwd
 - echo $SCRIPTS
-- git log
 - pwd
 - ls
 - cd
@@ -53,6 +52,4 @@ script:
 - which make
 
 - echo $SCRIPTS
-- which bash
-- ls /bin/bash
 
