@@ -9,8 +9,6 @@ notifications:
   on_success: never
   on_failure: never
 
-
-
 env:
 
 before_install:
@@ -19,7 +17,6 @@ before_install:
 
 # Uncomment this line the first time to build and install geant4 ; then it will be cached
 #- travis_wait 45 /bin/bash $SCRIPT_DIRECTORY/geant4_build.sh 10.03.p03
-- ls $HOME/geant4.10.03.p03/*
 - source $HOME/geant4.10.03.p03/geant4.10.03.p03-install/bin/geant4.sh
 
 # Uncomment this line the first time to build and install root ; then it will be cached
@@ -31,7 +28,6 @@ before_install:
 # Uncomment this line the first time to build and install ecat7 ; then it will be cached
 - /bin/bash $SCRIPT_DIRECTORY/ecat7/ecat7.sh
 - export ECAT7_DIRECTORY=$SCRIPT_DIRECTORY/ecat7
-
 
 install:
 
@@ -50,4 +46,3 @@ script:
 - echo $HOME
 
 - ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-public-develop.cmake -VV --output-on-failure
-
