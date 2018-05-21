@@ -27,8 +27,8 @@ before_install:
 #- wget https://root.cern.ch/download/root_v6.10.06.Linux-ubuntu14-x86_64-gcc4.8.tar.gz 
 #- tar -xvzf root_v6.10.06.Linux-ubuntu14-x86_64-gcc4.8.tar.gz
 #- mv root root_v6.10.06
-- source /home/travis/root/root_v6.10.06/bin/thisroot.sh
 - export ROOT_DIRECTORY=$HOME/root/root_v6.10.06
+- source /home/travis/root/root_v6.10.06/bin/thisroot.sh
 
 install:
 
