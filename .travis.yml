@@ -26,13 +26,13 @@ before_install:
 - source $HOME/geant4.10.03.p03/geant4.10.03.p03-install/bin/geant4.sh
 
 # Uncomment this line the first time to build and install root ; then it will be cached
-- /bin/bash $SCRIPT_DIRECTORY/root.sh
+#- /bin/bash $SCRIPT_DIRECTORY/root.sh
 - export ROOT_DIRECTORY=$HOME/root/root_v6.10.06
 - source /home/travis/root/root_v6.10.06/bin/thisroot.sh
 
 
 # Uncomment this line the first time to build and install ecat7 ; then it will be cached
-- /bin/bash $SCRIPT_DIRECTORY/ecat7/ecat7.sh
+#- /bin/bash $SCRIPT_DIRECTORY/ecat7/ecat7.sh
 - export ECAT7_DIRECTORY=$SCRIPT_DIRECTORY/ecat7
 
 install:
@@ -51,4 +51,4 @@ script:
 - echo $ECAT7_DIRECTORY
 - echo $HOME
 
-#- ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-public-develop.cmake -VV --output-on-failure
+- ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-public-develop.cmake -VV --output-on-failure
