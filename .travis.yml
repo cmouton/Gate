@@ -22,17 +22,17 @@ before_install:
 - export SCRIPT_DIRECTORY=$DASHBOARD_ROOT/travis
 
 # Uncomment this line the first time to build and install geant4 ; then it will be cached
-#- travis_wait 45 /bin/bash $SCRIPT_DIRECTORY/geant4_build.sh 10.03.p03
+- travis_wait 45 /bin/bash $SCRIPT_DIRECTORY/geant4_build.sh 10.03.p03
 - source $HOME/geant4.10.03.p03/geant4.10.03.p03-install/bin/geant4.sh
 
 # Uncomment this line the first time to build and install root ; then it will be cached
-#- /bin/bash $SCRIPT_DIRECTORY/root.sh
+- /bin/bash $SCRIPT_DIRECTORY/root.sh
 - export ROOT_DIRECTORY=$HOME/root/root_v6.10.06
 - source /home/travis/root/root_v6.10.06/bin/thisroot.sh
 
 
 # Uncomment this line the first time to build and install ecat7 ; then it will be cached
-#- /bin/bash $SCRIPT_DIRECTORY/ecat7/ecat7.sh
+- /bin/bash $SCRIPT_DIRECTORY/ecat7/ecat7.sh
 - export ECAT7_DIRECTORY=$SCRIPT_DIRECTORY/ecat7
 
 install:
