@@ -32,6 +32,26 @@ before_install:
 - export ROOT_DIRECTORY=$HOME/root/root_v6.10.06
 - source /home/travis/root/root_v6.10.06/bin/thisroot.sh
 
+# Uncomment these lines the first time to build and install ecat7 ; then it will be cached
+- rm -rf $HOME/ecat7
+- mkdir $HOME/ecat7
+- cd $HOME/ecat7
+- wget www.opengatecollaboration.org/sites/default/files/ecat.tar.gz
+- tar -xvzf ecat.tar.gz
+- export ECAT7_DIRECTORY=$HOME/ecat7
+- cp Makefile.unix Makefile
+- make
+- cd utils
+- cp Makefile.unix Makefile
+- make
+- cd ..
+- mkdir include
+- cp *.h include/
+- mkdir lib
+- cp libecat.a lib/
+
+
+
 install:
 
 cache:
@@ -39,12 +59,14 @@ cache:
 - directories:
   - $HOME/geant4.10.03.p03
   - $HOME/root
+  - $HOME/ecat7
 
 script:
 - which git
 - echo $DASHBOARD_ROOT
 - echo $SCRIPT_DIRECTORY
 - echo $ROOT_DIRECTORY
+- echo $ECAT7_DIRECTORY
 - echo $HOME
 
 - ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-public-develop.cmake -VV --output-on-failure

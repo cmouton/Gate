@@ -31,7 +31,7 @@ set(CTEST_UPDATE_COMMAND "${CTEST_GIT_COMMAND}")
 
 # Send this script as a note.
 list(APPEND CTEST_NOTES_FILES
-     "$ENV{SCRIPT_DIRECTORY}/common/opengate_common.cmake"  
+     "$ENV{SCRIPT_DIRECTORY}/common/opengate_common.cmake"
      ""
     )
 
@@ -40,7 +40,7 @@ list(APPEND CTEST_NOTES_FILES
 
 # Compilation flags enabling all warnings and providing the path for Geant4.
 set(WARNING_FLAGS_FOR_COMPILATION "-W -Wno-unused-parameter -Wno-attributes")
-set(ECAT7_HOME_PATH "/home/mouton/src/ecat7")
+set(ECAT7_HOME_PATH "$ENV{ECAT7_DIRECTORY}")
 set(CTEST_CONFIGURE_COMMAND "${CMAKE_COMMAND} -DBUILD_TESTING:BOOL=ON")
 set(CTEST_CONFIGURE_COMMAND "${CTEST_CONFIGURE_COMMAND}
                             \"-DGATE_DOWNLOAD_BENCHMARKS_DATA:BOOL=ON\"")
