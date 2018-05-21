@@ -40,11 +40,9 @@ cache:
 
 script:
 
-#ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-creatis-develop.cmake -VV --output-on-failure
-
-
 - echo $DASHBOARD_ROOT
 - echo $SCRIPT_DIRECTORY
 - echo $ROOT_DIRECTORY
 - echo $HOME
 
+- ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-creatis-develop.cmake -VV --output-on-failure
