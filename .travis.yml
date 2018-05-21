@@ -23,7 +23,6 @@ before_install:
 - ls $HOME/geant4.10.03.p03/*
 
 - cd $HOME
-- mkdir root
 - cd root
 - wget https://root.cern.ch/download/root_v6.10.06.Linux-ubuntu14-x86_64-gcc4.8.tar.gz 
 - tar -xvzf root_v6.10.06.Linux-ubuntu14-x86_64-gcc4.8.tar.gz
