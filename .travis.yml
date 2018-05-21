@@ -20,6 +20,7 @@ before_install:
 # Uncomment the first time to build and install geant4 ; then it will be cached
 #- travis_wait 45 /bin/bash $SCRIPT_DIRECTORY/geant4_build.sh 10.03.p03
 - ls $HOME/geant4.10.03.p03/*
+- source $HOME/geant4.10.03.p03/geant4.10.03.p03-install/bin/geant4.sh
 
 - cd root
 # Uncomment the following lines the first time to build and install root ; then it will be cached
