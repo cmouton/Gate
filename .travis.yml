@@ -31,6 +31,7 @@ before_install:
 
 
 # Uncomment these lines the first time to build and install ecat7 ; then it will be cached
+#- /bin/bash $SCRIPT_DIRECTORY/ecat7/ecat7.sh
 - rm -rf $HOME/ecat7
 - mkdir $HOME/ecat7
 - cd $HOME/ecat7
