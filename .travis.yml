@@ -24,6 +24,13 @@ before_install:
 - ls $HOME/geant4.10.03.p03/*
 #- less $SCRIPT_DIRECTORY/geant4_install_log.txt
 
+- cd $HOME
+- mkdir root
+- cd root
+- wget https://root.cern.ch/download/root_v6.10.06.Linux-ubuntu14-x86_64-gcc4.8.tar.gz 
+- tar -xvf root_v5.34.36.Linux-ubuntu14-x86_64-gcc4.8.tar.gz
+- source ~/root/bin/thisroot.sh
+
 install:
 
 cache:
@@ -33,7 +40,7 @@ cache:
 
 script:
 
-#/usr/bin/ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-creatis-develop.cmake -VV --output-on-failure
+#ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-creatis-develop.cmake -VV --output-on-failure
 
 
 - echo $cwd
