@@ -3,6 +3,7 @@
 # Warning : only the version "10.00.p02", "10.01" and "10.01.p01" have been tested with this script.
 # Example:
 # /bin/bash geant4_build.sh 10.01
+#!/bin/sh
 
 cd $HOME
 rm -rf geant4.$1

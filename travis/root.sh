@@ -1,3 +1,5 @@
+#!/bin/sh
+
 rm -rf $HOME/root
 mkdir $HOME/root
 cd $HOME/root
