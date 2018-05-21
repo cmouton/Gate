@@ -32,6 +32,8 @@ before_install:
 - ls /usr/lib*
 - ls /var/
 - ls /var/lib*
+- ls /lib64/
+- ls /lib64/*
 - find /usr/lib -name libsocket* -type f
 - find /var/lib -name libsocket* -type f
 
@@ -75,3 +77,4 @@ script:
 - echo $HOME
 
 - ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-public-develop.cmake -VV --output-on-failure
+
