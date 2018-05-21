@@ -29,7 +29,7 @@ before_install:
 - cd root
 - wget https://root.cern.ch/download/root_v6.10.06.Linux-ubuntu14-x86_64-gcc4.8.tar.gz 
 - tar -xvf root_v5.34.36.Linux-ubuntu14-x86_64-gcc4.8.tar.gz
-- source ~/root/bin/thisroot.sh
+- source ~/root/root/bin/thisroot.sh
 
 install:
 
@@ -37,6 +37,7 @@ cache:
 - timeout: 2700
 - directories:
   - $HOME/geant4.10.03.p03
+  - $HOME/root
 
 script:
 
