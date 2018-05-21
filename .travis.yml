@@ -30,7 +30,7 @@ before_install:
 
 # Uncomment this line the first time to build and install ecat7 ; then it will be cached
 - /bin/bash $SCRIPT_DIRECTORY/ecat7/ecat7.sh
-
+- export ECAT7_DIRECTORY=$SCRIPT_DIRECTORY/ecat7
 
 
 install:
@@ -43,7 +43,6 @@ cache:
   - $HOME/ecat7
 
 script:
-- which git
 - echo $DASHBOARD_ROOT
 - echo $SCRIPT_DIRECTORY
 - echo $ROOT_DIRECTORY

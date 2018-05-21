@@ -5,7 +5,6 @@ mkdir $HOME/ecat7
 cd $HOME/ecat7
 wget www.opengatecollaboration.org/sites/default/files/ecat.tar.gz
 tar -xvzf ecat.tar.gz
-export ECAT7_DIRECTORY=$HOME/ecat7
 cp Makefile.unix Makefile
 make
 cd utils
