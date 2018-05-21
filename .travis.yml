@@ -27,7 +27,13 @@ before_install:
 - export ROOT_DIRECTORY=$HOME/root/root_v6.10.06
 - source /home/travis/root/root_v6.10.06/bin/thisroot.sh
 
-- find / -name libsocket* -type f
+- ls /
+- ls /usr/
+- ls /usr/lib*
+- ls /var/
+- ls /var/lib*
+- find /usr/lib -name libsocket* -type f
+- find /var/lib -name libsocket* -type f
 
 
 # Uncomment these lines the first time to build and install ecat7 ; then it will be cached
