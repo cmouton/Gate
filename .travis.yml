@@ -51,4 +51,4 @@ script:
 - echo $ECAT7_DIRECTORY
 - echo $HOME
 
-- ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-public-develop.cmake -VV --output-on-failure
+#- ctest -S $SCRIPT_DIRECTORY/linux15_lin64/linux-gcc_4.8.3_ITKOFF-geant4_10.03.p03-opengate-public-develop.cmake -VV --output-on-failure
