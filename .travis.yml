@@ -24,12 +24,12 @@ before_install:
 - less $HOME/geant4.10.03.p03/geant4_install_log.txt
 
 - cd $HOME
-- mkdir root
-- cd root
-- wget https://root.cern.ch/download/root_v6.10.06.Linux-ubuntu14-x86_64-gcc4.8.tar.gz 
-- tar -xvzf root_v6.10.06.Linux-ubuntu14-x86_64-gcc4.8.tar.gz
-- mv root root_v6.10.06
-- source /home/travis/root/root_v6.10.06/bin/thisroot.sh
+#- mkdir root
+#- cd root
+#- wget https://root.cern.ch/download/root_v6.10.06.Linux-ubuntu14-x86_64-gcc4.8.tar.gz 
+#- tar -xvzf root_v6.10.06.Linux-ubuntu14-x86_64-gcc4.8.tar.gz
+#- mv root root_v6.10.06
+#- source /home/travis/root/root_v6.10.06/bin/thisroot.sh
 - export ROOT_DIRECTORY=/home/travis/root/root_v6.10.06
 - cd $ROOT_DIRECTORY
 - ls
