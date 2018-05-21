@@ -23,6 +23,8 @@ before_install:
 - source $HOME/geant4.10.03.p03/geant4.10.03.p03-install/bin/geant4.sh
 
 # Uncomment the following lines the first time to build and install root ; then it will be cached
+#- rm -rf $HOME/root
+#- mkdir $HOME/root
 #- cd $HOME/root
 #- wget https://root.cern.ch/download/root_v6.10.06.Linux-ubuntu14-x86_64-gcc4.8.tar.gz 
 #- tar -xvzf root_v6.10.06.Linux-ubuntu14-x86_64-gcc4.8.tar.gz
