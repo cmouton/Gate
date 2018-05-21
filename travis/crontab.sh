@@ -1,4 +1,7 @@
-# Not tested
+# Idea not tested and useless
+# Instead configured travis-ci/more options/settings/cron jobs :
+# on branch travis, run daily
+
 # Synchronize from the official public repository.
 git pull origin develop
 
